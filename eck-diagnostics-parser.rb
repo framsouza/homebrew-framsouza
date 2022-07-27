@@ -5,11 +5,11 @@
 class EckDiagnosticsParser < Formula
   desc ""
   homepage "https://github.com/framsouza/eck-diagnostics-parser"
-  version "1.0.3"
+  version "1.0.0"
 
   on_macos do
-    url "https://github.com/framsouza/eck-diagnostics-parser/releases/download/v1.0.3/eck-diagnostics-parser_1.0.3_darwin_all.tar.gz"
-    sha256 "f382bb78724c9ed38c828ef3ffb9cb73ae9b8ec65436dc68b439816c6fdde412"
+    url "https://github.com/framsouza/eck-diagnostics-parser/releases/download/v1.0.0/eck-diagnostics-parser_1.0.0_darwin_all.tar.gz"
+    sha256 "d4bdbe8f99232e428c2d2d38eaeb8542a6884f6c930efe803c1be93cc16c7132"
 
     def install
       bin.install "eck-diagnostics-parser"
@@ -18,16 +18,16 @@ class EckDiagnosticsParser < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/framsouza/eck-diagnostics-parser/releases/download/v1.0.3/eck-diagnostics-parser_1.0.3_linux_arm64.tar.gz"
-      sha256 "d34d274b99a88e2353d4c89d8616b5c57f50f0267cafa8182b70bbe8cb4e7f61"
+      url "https://github.com/framsouza/eck-diagnostics-parser/releases/download/v1.0.0/eck-diagnostics-parser_1.0.0_linux_arm64.tar.gz"
+      sha256 "6d964607d2384f4458c13d7c17d8a12762269d370174a640169636013373c960"
 
       def install
         bin.install "eck-diagnostics-parser"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/framsouza/eck-diagnostics-parser/releases/download/v1.0.3/eck-diagnostics-parser_1.0.3_linux_amd64.tar.gz"
-      sha256 "e6829951d46bdcdeeaf5d2320126c12c0c96914dc9a7191946ad18ece04bd162"
+      url "https://github.com/framsouza/eck-diagnostics-parser/releases/download/v1.0.0/eck-diagnostics-parser_1.0.0_linux_amd64.tar.gz"
+      sha256 "9f66f3d2f59574afe595a3df2cdbdf1554545aff3a4f0f1c184a11e64726932c"
 
       def install
         bin.install "eck-diagnostics-parser"
